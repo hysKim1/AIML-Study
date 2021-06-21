@@ -1,9 +1,12 @@
 #2577   숫자의 개수
-A = int(input())
-B = int(input())
-C = int(input())
+arr=[]
+prod=1
 
-num_list = list(str(A * B * C))
-
-for i in range(10):
-    print(num_list.count(str(i)))
+for i in range(3):
+    prod *= int(input())
+    
+for j in range(10):
+    arr.append(str(prod).count(str(j)))
+    
+for k in arr:
+    print(k)
