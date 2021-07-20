@@ -1,4 +1,9 @@
 #1978 소수찾기 
+#1 short ver
+input()
+print(sum(all(i%j for j in range(2, i))*i>1 for i in map(int,input().split())))
+
+#2
 n = int(input())
 li = list(map(int, input().split()))
 t_li = [1]*(max(li)+1)
